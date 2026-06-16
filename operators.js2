@@ -1,0 +1,49 @@
+const user = {
+    name: "Abc",
+    age: 25,
+    gender: "male"
+}
+
+//Accessing
+console.log(user.name);
+console.log(user["name"]);
+
+//Updating
+user.age = 32;
+console.log(user.age);
+
+//Adding
+user.city = "XYZ";
+console.log(user.city);
+
+//delete
+delete user.gender;
+console.log(user.gender);
+
+//printing all elements
+for (let key in user){
+    console.log(key +  ":" + user[key]);
+}
+
+let students = [
+    {
+        id:1,
+        name:"John",
+        class:5
+    },
+    {
+        id:2,
+        name:"Jia",
+        class:7
+    },
+    {
+        id:3,
+        name:"Sam",
+        class:10
+    }
+]
+
+console.log(students[0]);
+
+console.log(students[1].name);
+
